@@ -1,0 +1,56 @@
+.dropDown {
+  position: relative;
+  width: 100%;
+}
+
+.dropDownButtonBox {
+  position: relative;
+  border: 1px solid #e1e1e1;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+.dropDownContent {
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s ease;
+  padding: 10px;
+  opacity: 0;
+}
+
+.dropDownContentShow {
+  max-height: 1000px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.dropDownList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropDownItem {
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.dropDownItem:hover {
+  background: #e1e1e1;
+}
